@@ -23,7 +23,7 @@ More information regarding System Requirements: https://developer.android.com/st
 3. Once the Application is fully downloaded it, Open it up
 
 It will ask you to either create a new project OR open a new project.
-Download the PlannIt App Folder and open it with Android Studio
+Download the PlannIt App Folder from the Githuband open it with Android Studio
 
 4. Set up an emulator
 

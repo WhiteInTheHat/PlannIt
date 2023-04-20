@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">PlannIt</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Today">Today:</string>
+    <string name="tasks">Tasks:</string>
+    <string name="addTaskHint">Task Name</string>
+    <string name="addDate">Add date?</string>
+    <string name="priority"><u>Priority:</u></string>
+    <string name="addSubtask"><u>Add Subtask:</u></string>
+    <string name="Labels"><u>Add Label:</u></string>
+    <string name="addNote"><u>Add Note:</u></string>
+    <string name="back"><![CDATA[<-]]></string>
+    <string name="forward"><![CDATA[->]]></string>
+</resources>

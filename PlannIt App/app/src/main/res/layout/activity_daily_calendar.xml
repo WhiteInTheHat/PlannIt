@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DailyCalendarActivity"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:text="@string/back"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:onClick="backAction"
+                android:textSize="20sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="start|center"
+                android:text="Calendar Day View"
+                android:layout_marginStart="10dp"
+                android:textSize="20sp"
+                android:textAlignment="textStart"
+                android:textStyle="bold"
+                android:textColor="@color/purple_500"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/monthDayText"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:text="April 2023"
+            android:layout_marginStart="25dp"
+            android:textSize="18sp"
+            android:textAlignment="textStart"
+            android:textStyle="italic"
+            android:textColor="@color/dark_grey"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/dayOfWeekTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Monday"
+        android:textColor="@color/grey"
+        android:textAlignment="center"
+        android:layout_marginBottom="20dp"
+        android:textSize="18sp"/>
+    <ListView
+        android:id="@+id/hourListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        ><!--Change all heights to wrap_content when above is done-->
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@null"
+            android:textStyle="bold"
+            android:onClick="previousDayAction"
+            android:textSize="20sp"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:text="@string/forward"
+            android:textColor="@color/white"
+            android:background="@null"
+            android:textStyle="bold"
+            android:onClick="nextDayAction"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
